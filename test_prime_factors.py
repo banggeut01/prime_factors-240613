@@ -2,6 +2,7 @@ from unittest import TestCase
 
 from prime_factors import PrimeFactor
 
+
 class PrimeFactorTest(TestCase):
 
     def setUp(self):
@@ -16,3 +17,6 @@ class PrimeFactorTest(TestCase):
 
     def test_prime_factor_of_3(self):
         self.assertEqual([3], self.prime_factor.of(3))
+
+    def test_prime_factor_of_4(self):
+        self.assertEqual([2, 2], self.prime_factor.of(4))
